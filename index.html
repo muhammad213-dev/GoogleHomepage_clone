@@ -11,8 +11,28 @@
     <title>google</title>
 </head>
 <body>
-    
+    <div id="overlay"></div>
+    <!-- ------------SIGNINBOX00----------------- -->
+    <div id="sign-in-box">
+        <div class="left">
+            <img src="src/google.png" alt="google logo">
+            <h3>Sign in</h3>
+            <p>Use your Google Account</p>
+        </div>
+        <div class="right">
+            <form>
+                <input type="text" placeholder="Email or Phone">
+                <a href="#">Forgot email?</a>
+            </form>
+            <p>Not your computer? Use Guest mode to sign in privately. <a href="#">Learn more about using Guest mode</a></p>
+            <div class="row">
+               <button id="left-btn">Create an account</button>
+               <button id="right-btn">Next</button>
+            </div>
+        </div>
+    </div>
     <div id="main">
+        
         <!-- nav -->
         <div class="nav">
             <ul>
@@ -41,7 +61,7 @@
                        </div>
                     </div>
                 </li>
-                <li><button id="btn">Sign in</button></li>
+                <li><button id="sign-btn">Sign in</button></li>
             </ul>
         </div>
         <div id="page-content">
