@@ -83,7 +83,7 @@ html, body{
     cursor: pointer;
     position: relative;
 }
-#btn{
+#sign-btn{
     cursor: pointer;
     font-size: 1rem;
     padding: 4px 10px;
@@ -98,6 +98,7 @@ html, body{
 }
 #main{
   flex: 1;
+  z-index: auto;
 }
 
 /* -----page content----- */
@@ -252,6 +253,100 @@ div ul li a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* ----overlay----- */
+#overlay{
+    width: 100vw;
+    height: 100vh;
+    background: #f1faff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    display: none;
+}
+/* -------------SINGIN Box======== */
+#sign-in-box{
+    display: none;
+    width: 80%;
+    max-width: 700px;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+    z-index: 1001;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.right input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.right input:focus{
+    outline: 1px solid #00a1f1;
+}
+.left img{
+    width: 40px;
+}
+.right form a{
+    margin-bottom: 30px;
+}
+.right .row {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+
+}
+#left-btn{
+    background: none;
+    color: blue;
+    font-size:15px;
+    border: none;
+    transition: background 0.3se ease-in-out;
+}
+#left-btn:hover{
+    background: #f2f6fd;
+    border-radius: 20px;
+}
+#right-btn{
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: none;
+    background: rgb(25, 103, 210);
+    color: white;
+    cursor: pointer;
+    
+}
+.right p{
+    margin-top: 20px;
+}
+.right a{
+    text-decoration: none;
+    color: rgb(25, 103, 210);
+}
+.right .row{
+    margin-left: 30px;
+}
+/* ------------------left-----------------
+ */
+.left p{
+    margin-top: 30px;
+    font-size: 12px;
+
+}
+.left h3{
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 100;
 }
 @media (max-width: 960px) {
     #main{
